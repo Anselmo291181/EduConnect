@@ -88,12 +88,6 @@ describe('Testando o PostController', () => {
         expect(res.status).toHaveBeenCalledWith(201);
         expect(res.json).toHaveBeenCalledWith({
             message: "Post criado com sucesso!",
-<<<<<<< HEAD
-            post: novoPost,
-        });
-    });
-
-=======
             post: {
                 ...novoPost,
                 autor: autorMock._doc,
@@ -102,7 +96,6 @@ describe('Testando o PostController', () => {
     });
 
 
->>>>>>> 68f4fe5 (Melhorias e refatoração de código)
     it('Deve atualizar um post pelo ID', async () => {
         post.findByIdAndUpdate.mockResolvedValue();
 

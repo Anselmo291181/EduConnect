@@ -20,13 +20,8 @@ describe('Testando o AutorController', () => {
 
     it('Deve listar todos os autores', async () => {
         const autoresMock = [
-<<<<<<< HEAD
-            { nome: "Autor 1", email: "autor1@email.com", senha: "123456" },
-            { nome: "Autor 2", email: "autor2@email.com", senha: "654321" },
-=======
             { nome: "Autor 1", email: "autor1@email.com" },
             { nome: "Autor 2", email: "autor2@email.com" },
->>>>>>> 68f4fe5 (Melhorias e refatoração de código)
         ];
         Autor.find.mockResolvedValue(autoresMock);
 
@@ -41,11 +36,7 @@ describe('Testando o AutorController', () => {
     });
 
     it('Deve listar um autor pelo ID', async () => {
-<<<<<<< HEAD
-        const autorMock = { nome: "Autor 1", email: "autor1@email.com", senha: "123456" };
-=======
         const autorMock = { nome: "Autor 1", email: "autor1@email.com" };
->>>>>>> 68f4fe5 (Melhorias e refatoração de código)
         Autor.findById.mockResolvedValue(autorMock);
 
         const req = mockRequest({}, { id: '123' });
@@ -59,11 +50,7 @@ describe('Testando o AutorController', () => {
     });
 
     it('Deve criar um novo autor', async () => {
-<<<<<<< HEAD
-        const novoAutor = { nome: "Autor Teste", email: "teste@email.com", senha: "12345" };
-=======
         const novoAutor = { nome: "Autor Teste", email: "teste@email.com" };
->>>>>>> 68f4fe5 (Melhorias e refatoração de código)
         Autor.create.mockResolvedValue(novoAutor);
 
         const req = mockRequest(novoAutor);
@@ -111,11 +98,7 @@ describe('Testando o AutorController', () => {
 
     it('Deve listar autores por nome', async () => {
         const autoresMock = [
-<<<<<<< HEAD
-            { nome: "Autor Teste", email: "teste@email.com", senha: "12345" },
-=======
             { nome: "Autor Teste", email: "teste@email.com" },
->>>>>>> 68f4fe5 (Melhorias e refatoração de código)
         ];
         Autor.find.mockResolvedValue(autoresMock);
 
