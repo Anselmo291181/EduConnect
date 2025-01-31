@@ -8,6 +8,7 @@
     "test": "jest"
   },
   "keywords": [],
+<<<<<<< HEAD
   "author": "Anselmo Luiz da Rocha",
   "license": "ISC",
   "description": "Projeto Tech Challenge referente a Fase 2 - Backend e Qualidade da postech Full Stack Development",
@@ -15,6 +16,17 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jest": "^29.7.0",
+=======
+  "author": "Mateus Ramos Pereira",
+  "license": "ISC",
+  "description": "Backend e Qualidade - Fase 2 - Postech Full Stack Development",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jest": "^29.7.0",
+    "jsonwebtoken": "^9.0.2",
+>>>>>>> 68f4fe5 (Melhorias e refatoração de código)
     "mongodb": "^6.12.0",
     "mongoose": "^8.9.5",
     "nodemon": "^3.1.9"

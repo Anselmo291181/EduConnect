@@ -3,6 +3,30 @@ import { autor } from "../models/Autor.js";
 
 class PostController {
 
+<<<<<<< HEAD
+=======
+    static async criarPost(req, res) {
+        const novoPost = req.body;
+        try {
+            const autorEncontrado = await autor.findById(novoPost.autor);
+            const postCompleto = {
+                ...novoPost,
+                autor: { ...autorEncontrado._doc }
+            }
+            
+            const postCriado = await post.create(postCompleto);
+            res.status(201).json({
+                message: "Post criado com sucesso!",
+                post: postCriado
+            });
+        } catch (error) {
+            res.status(500).json({
+                message: `${error.message} - falha ao criar post`,
+            });
+        }
+    }
+
+>>>>>>> 68f4fe5 (Melhorias e refatoração de código)
     static async listarPosts(req, res) {
         try {
             const listaPosts = await post.find({});
@@ -26,6 +50,7 @@ class PostController {
         }
     }
 
+<<<<<<< HEAD
     static async criarPost(req, res) {
         const novoPost = req.body;
         try {
@@ -46,6 +71,8 @@ class PostController {
         }
     }
 
+=======
+>>>>>>> 68f4fe5 (Melhorias e refatoração de código)
     static async atualizarPost(req, res) {
         try {
             const id = req.params.id;
